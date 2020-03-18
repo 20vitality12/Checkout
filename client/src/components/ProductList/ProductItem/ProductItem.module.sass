@@ -1,0 +1,92 @@
+.productCardContainer
+  display: flex
+  padding: 15px
+  border-bottom: 1px solid #cfcfcfcf
+  justify-content: space-between
+  .productImage
+    img
+      height: 128px
+      width: 128px
+      border-radius: 12px
+      -webkit-box-shadow: 2px 2px 10px 0 rgba(163,163,163,1)
+      -moz-box-shadow: 2px 2px 10px 0 rgba(163,163,163,1)
+      box-shadow: 2px 2px 10px 0 rgba(163,163,163,1)
+  .productDescription
+    display: flex
+    flex-direction: column
+    margin-right: auto
+    padding-left: 30px
+    width: 60%
+    h3, p
+      line-height: 1.4
+    p
+      padding-top: 15px
+      color: darkgray
+  .amountChoiceContainer
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    .amountChoice
+      cursor: pointer
+      display: flex
+      margin-right: 15px
+      color: darkgray
+      font-size: 28px
+      input
+        border: none
+        text-align: center
+        outline: none
+        color: darkgray
+  .priceContainer
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .activeContainer
+      display: none
+    i
+      cursor: pointer
+      display: flex
+      justify-content: flex-end
+      color: darkgray
+      font-size: 18px
+      line-height: 1.4
+    p
+      padding-bottom: 5px
+
+::-webkit-textfield-decoration-container
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button
+  -webkit-appearance: none
+  -moz-appearance: none
+
+@media (max-width: 860px)
+  .productCardContainer
+    .productImage
+      img
+        width: 96px
+        height: 96px
+    .productDescription
+      h3
+        font-size: 1em
+      p
+        padding-top: 10px
+        font-size: 0.8em
+    .priceContainer
+      .activeContainer
+        display: flex
+    .amountChoiceContainer
+      display: none
+      .amountChoice
+        margin-right: 0
+
+@media (max-width: 540px)
+  .productCardContainer
+    .productImage
+      img
+        width: 64px
+        height: 64px
+    .productDescription
+      h3
+        font-size: 0.8em
+      p
+        padding-top: 5px
+        font-size: 0.6em

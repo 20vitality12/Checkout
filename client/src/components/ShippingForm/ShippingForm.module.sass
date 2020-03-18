@@ -1,0 +1,59 @@
+.formContainer
+  display: flex
+  justify-content: center
+  .shippingForm
+    margin-top: 30px
+    .formField
+      .row
+        display: flex
+        flex-direction: column
+        .error
+          font-size: 0.8em
+          padding: 10px 0
+          color: red
+        .errorInput
+            border-color: red
+      display: flex
+      justify-content: space-between
+      width: 500px
+      input
+        padding: 10px 15px
+        border: 1px solid darkgrey
+        border-radius: 4px
+      label
+        font-size: 1.4em
+        width: 40%
+        padding: 10px 15px
+      select
+        padding: 0 10px
+        width: 210px
+        background-color: white
+        border-color: darkgray
+        border-radius: 4px
+  .payButton
+    display: flex
+    justify-content: flex-end
+    button
+      padding: 10px 40px
+      font-size: 1.2em
+      cursor: pointer
+      color: darkgray
+      margin-top: 35px
+      border: 1px solid darkgray
+
+@media(max-width: 540px)
+  .formContainer
+    .shippingForm
+      display: flex
+      flex-direction: column
+      width: 100%
+      .formField
+        display: flex
+        flex-direction: column
+        width: 100%
+        label
+          width: 60%
+        select
+          padding: 10px 15px
+          border-color: darkgray
+          width: 100%
